@@ -1,0 +1,24 @@
+{
+  "name": "ai_a11y_debugger_cli",
+  "version": "1.0.0",
+  "description": "takes a code snippet and accessibility issue description from user input and returns likely cause, solution, WCAG criterion, and confidence level from Claude AI API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prestart": "npm run build"
+  },
+  "keywords": [],
+  "author": "Luke Kudryashov",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0"
+  }
+}
